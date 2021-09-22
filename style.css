@@ -12,6 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1440px;
     
 }
 
@@ -23,46 +24,47 @@ body{
     background-color: white;
     border-radius: 30px;
     width: 70%;
-    height: 65vh;
+    height: 55vh;
+    margin-left: 13vw;
     box-shadow:  -9px 20px 35px 9px hsl(240deg 37% 35%)
 }
 .img-holder{
     overflow: hidden;
     position: relative;
-    width: 37vw;
+    
     z-index: 1;
 }
 .background{
-    background-image:url('./images/bg-pattern-desktop.svg');
+    
     background-position: right;
     background-repeat: no-repeat;
     position: absolute;
     width: 130%;
-    height: 84vh;
+    
     left: -50%;
-    top: -21%;
+    top: -10%;
     z-index: 2;
    
    
 }
 .illustration{
-    background-image: url('./images/illustration-woman-online-desktop.svg');
+    
     background-repeat: no-repeat;
     width: 100%;
-    height: 70vh;
-    margin-left: 20%;
-    margin-top: 18%;
-    transform: scale(0.9);
+    
+    margin-left: -5vw;
+    margin-top: 4vw;
+    
     z-index: 3;
     
     
 }
 .cube{
-    background-image: url('./images/illustration-box-desktop.svg');
+    
     background-repeat: no-repeat;
-    height: 42%;
-    width: 7vw;
-    margin-bottom: -10%;
+    top: -9%;
+    left: 23%;
+    margin-bottom: -11%;
     z-index: 4;
     position: relative;
     
@@ -115,12 +117,68 @@ p {
 .active p{
     display: block;
 }
+@media(max-width:375px){
+    .cube{
+        top: 4%;
+    }
+}
 
 
 
+@media  (max-width: 700px) {
 
-@media (max-width:2000){
+    body{
+
+    display: block;
+        
+    }
+    .main{
     
+    display: block;
+    margin-top: 20%;
+    width: 83%;
+    height: 84vh;
+    margin-left: 9%;
+}
+.img-holder{
+    top: -43vw;
+    overflow: visible;
+}
+.background{
     
+    left: -21%;
     
+}
+.cube{
+    width: 100px;
+    top: 8%;
+    left: -3%;
+}
+    section{
+        padding-left: 7%;
+
+    }
+}  
+@media (min-width: 700px){
+
+    .main{
+        margin-left:-17vw;
+    }
+    .cube{
+        top: -19%;
+    left: -4%;
+    width: 164px;
+    left: -9%;
+    width: 126px;
+    }
+}
+@media(min-width: 1220px){
+.main{
+    margin-left: 2vw;
+
+}
+.cube{
+left: 8%;
+}
+
 }
