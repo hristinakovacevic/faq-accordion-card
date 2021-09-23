@@ -1,8 +1,8 @@
 
-    let questions = document.querySelectorAll('.first-paragraph');
+    let paragraphs = document.querySelectorAll('.first-paragraph');
     
-questions.forEach((question)=>
-        question.addEventListener('click', function() {answerFunc(question)})
+paragraphs.forEach((paragraph)=>
+        paragraph.addEventListener('click', function() {answerFunc(paragraph)})
     )
   
 function answerFunc(e){
