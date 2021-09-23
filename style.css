@@ -26,7 +26,7 @@ body{
     background-color: white;
     border-radius: 30px;
     width: 70%;
-    height: 80vh;
+    max-height: 90vh;
     
     box-shadow:  -9px 20px 35px 9px hsl(240deg 37% 35%)
 }
@@ -118,12 +118,21 @@ h1{
     color: hsl(238, 29%, 16%);
 }
 p {
-    display: none;
+    max-height: 0;
+    transition: .8s;
+    overflow: hidden;
     color: hsl(240, 6%, 50%);
+    
 }
-.active p{
-    display: block;
+.active  p{
+
+    max-height: 6em;
+    transition: .8s;
+    
 }
+ 
+ 
+
 @media(max-width:375px){
 
     .main{
