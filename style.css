@@ -3,6 +3,7 @@
     padding: 0;
 }
 body{
+    position: relative;
     height: 100vh;
     background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
@@ -18,14 +19,15 @@ body{
 
 
 .main{
+    position: absolute;
     display: grid;
     grid-template-columns: 2fr 2fr;
     z-index: 0;
     background-color: white;
     border-radius: 30px;
     width: 70%;
-    height: 55vh;
-    margin-left: 13vw;
+    height: 65vh;
+    
     box-shadow:  -9px 20px 35px 9px hsl(240deg 37% 35%)
 }
 .img-holder{
@@ -118,6 +120,9 @@ p {
     display: block;
 }
 @media(max-width:375px){
+    h1{
+        padding-bottom: 15%;
+    }
     .cube{
         top: 4%;
     }
@@ -128,16 +133,16 @@ p {
 @media  (max-width: 700px) {
 
     body{
-
+    margin-top: 12vh;
     display: block;
-        
+    height: 118vh;
     }
     .main{
     
     display: block;
     margin-top: 20%;
     width: 83%;
-    height: 84vh;
+    height: 94vh;
     margin-left: 9%;
 }
 .img-holder{
@@ -152,23 +157,21 @@ p {
 .cube{
     width: 100px;
     top: 8%;
-    left: -3%;
+    left: 2%;
 }
     section{
         padding-left: 7%;
-
+        height: 20vh;
     }
 }  
 @media (min-width: 700px){
 
     .main{
-        margin-left:-17vw;
+        margin-left:-10vw;
     }
     .cube{
         top: -19%;
-    left: -4%;
-    width: 164px;
-    left: -9%;
+        left: -40%;
     width: 126px;
     }
 }
@@ -178,7 +181,7 @@ p {
 
 }
 .cube{
-left: 8%;
+left: -34%;
 }
 
 }
