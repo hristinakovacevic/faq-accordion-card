@@ -139,7 +139,7 @@ p {
 
 
 
-@media  (max-width: 700px) {
+@media  (max-width: 500px) {
 
     .container{
         
@@ -168,8 +168,8 @@ p {
 }
 .cube{
     width: 100px;
-    top: 8%;
-    left: 2%;
+    top: -39%;
+    left: -33%;
 }
     section{
         padding-left: 7%;
@@ -179,16 +179,16 @@ p {
 @media (min-width: 700px){
 
     .cube{
-        top: -23%;
-    left: -35%;
+        top: -15%;
+    left: -30%;
     width: 126px;
     }
 }
-@media(min-width: 1220px){
+ @media(min-width: 1600px){
 
 .cube{
     left: -24%;
     top: -13%;
 }
 
-}
+} 
