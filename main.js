@@ -1,11 +1,17 @@
 
-    let paragraphs = document.querySelectorAll('.first-paragraph');
+    let questions = document.querySelectorAll('h3, .icon ');
+
+    questions.forEach((question) => {
+        question.addEventListener("click", function() {
     
-paragraphs.forEach((paragraph)=>
-        paragraph.addEventListener('click', function() {answerFunc(paragraph)})
-    )
-  
-function answerFunc(e){
-    e.classList.toggle('active');
+        if(question.parentNode.classList.contains("active")){
+            question.parentNode.classList.toggle("active")
+        }
+        else{
+            questions.forEach(question => question.parentNode.classList.remove("active"))
+            question.parentNode.classList.add("active")
+            }
+        })
+    })
     
-}
+

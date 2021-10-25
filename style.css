@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+
+
+.container{
     position: relative;
     height: 100vh;
     background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
@@ -13,10 +16,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1440px;
+    width: 100%;
     
 }
-
 
 .main{
     position: absolute;
@@ -25,8 +27,8 @@ body{
     z-index: 0;
     background-color: white;
     border-radius: 30px;
-    width: 70%;
-    max-height: 90vh;
+    width: 920px;
+    height: 509px;
     
     box-shadow:  -9px 20px 35px 9px hsl(240deg 37% 35%)
 }
@@ -82,7 +84,7 @@ section{
 
 }
 
-.first-paragraph{
+.paragraph{
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-gap: 2em;
@@ -93,7 +95,7 @@ section{
 
     
 }
-.first-paragraph:hover {
+.paragraph:hover {
     color: rgb(255, 115, 0);
 }
  h3{
@@ -101,11 +103,12 @@ section{
     
 
 }
+/* -------------------------------------------------Active---------------------------------- */
 .active h3{
     font-weight: 600;
     color: black;
 }
-.active .first-paragraph{
+.active .paragraph{
 border-bottom: none;
 
 }
@@ -124,7 +127,7 @@ p {
     color: hsl(240, 6%, 50%);
     
 }
-.active  p{
+.active p{
 
     max-height: 6em;
     transition: .8s;
@@ -133,38 +136,23 @@ p {
  
  
 
-@media(max-width:375px){
-
-    .main{
-        margin-left: 8%;
-    }
-    .first-paragraph:hover {
-        color: rgb(255, 115, 0);
-    }
-    h1{
-        padding-bottom: 15%;
-    }
-    .cube{
-        top: 4%;
-    }
-}
 
 
 
 @media  (max-width: 700px) {
 
-    body{
-    margin-top: 12vh;
-    display: block;
-    height: 118vh;
+    .container{
+        
+            height: 150vh;
+        
     }
     .main{
-    
-    display: block;
-    margin-top: 20%;
+        display: flex;
+    flex-direction: column;
+    top: 20%;
     width: 83%;
-    height: 94vh;
-    margin-left: 8%;
+    height: 648px;
+  
     
 }
 .img-holder{
@@ -173,7 +161,9 @@ p {
 }
 .background{
     
-    left: -21%;
+    width: 100%;
+    margin-left: 45%;
+    top: -7%;
     
 }
 .cube{
@@ -197,7 +187,8 @@ p {
 @media(min-width: 1220px){
 
 .cube{
-left: -34%;
+    left: -24%;
+    top: -13%;
 }
 
 }
